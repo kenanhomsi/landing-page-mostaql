@@ -1,0 +1,450 @@
+:root{
+    --main-color:#FFBD22;
+    --second-color:#882A80;
+    --threed-color:#F04B94;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.video{
+    width: 100%;
+}
+.container{
+    padding: 50px;
+}
+.section_margin{
+    margin: 90px 0px;
+}
+.title{
+    width: 80%;
+    text-align: center;
+    background-color: var(--second-color);
+    margin-left: 10%;
+    padding-top: 10px;
+    height: 65px;
+    font-size: 30px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+ .title::after{
+content: '';
+position: absolute;
+width: 99%;
+height: 10px;
+bottom: 0;
+background-color: var(--main-color);
+right: 0;
+border-bottom-left-radius: 20px;
+ }
+
+.first-section{
+display: flex;
+
+}
+.first-section img{
+    width: 500px;
+    height: 400px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    border: 3px solid var(--main-color);
+    
+}
+.first-section .txt{
+    display: flex;
+    flex-direction: column;
+}
+.first-section .txt div:first-child{
+    justify-content: flex-start;
+    position: relative;
+}
+.first-section .txt div:first-child::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    background-color: var(--main-color);
+}
+.first-section .txt div {
+    padding:0px 10px;
+}
+.first-section .txt div:last-child{
+text-align: end;}
+.first-section .txt div h2{
+    color: var(--second-color);
+}
+
+
+
+
+
+
+.second-section{
+    display: flex;
+    flex-direction: row;
+}
+.second-section img{
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px ;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius:  30px;
+    border: 3px solid var(--second-color);
+}
+.second-section div{
+    text-align: center;
+    margin-left: 30px;
+    position: relative;
+}
+.second-section div::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom:40%;
+    right: 0;
+}
+
+
+.second-section div h2{
+    font-size: 36px;
+    color: var(--main-color);
+
+}
+.second-section div p{
+    font-size: 22px;
+
+}
+.threed-section{
+    display: flex;
+    flex-direction: row;
+}
+.threed-section div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+.threed-section div h2{
+    position: relative;
+    font-size: 36px;
+    color: var(--main-color);
+}
+.threed-section div h2::after{
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: -30px;
+    right: 0;
+}
+.threed-section div p{
+    text-align: end;
+    font-size: 20px;
+}
+.threed-section div p span{
+    color: var(--threed-color);
+}
+#img1{
+    width: 500px;
+    height: 350px;
+}
+#img2{
+    width: 550px;
+    transform: rotateZ(90deg);
+
+
+}
+
+.line{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+.line img{
+    width: 400px;
+    height: 310px;
+}
+
+.line .section{
+    width: 104%;
+    overflow: hidden;
+    background-color: var(--main-color);
+    border: 6px solid var(--main-color);
+    transition:5s;   
+}
+ .line .section > div{
+    transition:5s;   
+    display: none;
+} 
+
+.line .five-section {
+    background-color: var(--second-color);
+    border: 6px solid var(--second-color);
+}
+
+ .line .section:hover > div{
+    display: block;
+}
+
+.line .section div h2{
+
+    color: var(--second-color);
+}
+.line .five-section div h2 {
+    color: var(--main-color);
+}
+.line .section div p{
+    font-size: 20px;
+    color: white;
+}
+.ideas{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-color: #F04B94;
+}
+.center-squer{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(255, 189, 34);
+    position: absolute;
+    top: 64%;
+    left: 38%;
+    transform: rotateZ(45deg) translate(-50%, -50%);
+}
+.center-squer img{
+    width: 300px;
+    margin-left: 23px;
+    margin-top: 20px;
+
+}
+.center-title{
+    position: absolute;
+    top: 40%;
+    right: 20%;
+    font-size: 100px;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    display: flex;
+    gap: 150x;
+    width: 60%;
+    height: 120px;
+}
+.idea ,.idea-2,.idea-3{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.idea-2{
+    left: 5px;
+}
+.idea-3{
+    top: 100px;
+    right: 150px; 
+}
+.idea .lines,.idea-2 .lines,.idea-3 .lines{
+    width: 50px;
+    height: 100px;
+    top: -73px;
+    right: 215px;
+    position: absolute;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 5px dashed white;
+    border-top: none;
+    
+}
+.idea-3 .lines{
+    width: 190px;
+    height: 50px;
+    top: -35px;
+    border-radius: 0;
+    border:none;
+    border-bottom: 5px dashed white;
+}
+.idea .lines{
+    border-top-left-radius: -10px;
+    border-right: none;
+    
+}
+.idea-2 .lines {
+    border-top-right-radius: -10px;
+    left: 215px;
+    border-left: none;
+}
+.idea img,.idea-2 img,.idea-3 img{
+    position: absolute;
+    right: 70px;
+    top: -60px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+
+}
+.idea-2 img{
+    left: 70px;
+}
+.idea .text,.idea-2 .text,.idea-3 .text{
+    position: relative;
+    right: 20px;
+    top: -190px;
+    width: 200px;
+    color: white;
+}
+.idea-3 .text{
+    top: -55px;
+    right: -140px;
+}
+.idea-2 .text{
+    left: 20px;
+    text-align: end;
+    
+}
+.idea .text h2,.idea-2 .text h2,.idea-3 .text h2{
+    color: var(--main-color);
+    font-size: 23px;
+}
+
+.seven-section,.nine-section{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.seven-section img, .nine-section img{
+    border: 3px solid var(--main-color);
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+
+}
+.seven-section div,.nine-section div,.eight-section div,.ten-section div{
+    margin-top: 30px;
+}
+.seven-section div h2,.nine-section div h2,.eight-section div h2,.ten-section div h2{
+    color: var(--main-color);
+}
+.seven-section div p,.nine-section p,.eight-section div p,.ten-section div p{
+    font-size: 20px;
+}
+.eight-section,.ten-section{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+.eight-section img, .ten-section img{
+    border: 3px solid var(--main-color);
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+
+}
+@media (max-width:550px) {
+    .first-section {
+        flex-direction: column;
+    }
+    .first-section img {
+        width: 100%;
+        height: 100%;
+    }
+    .title {
+        /* width: 80%; */
+        text-align: center;
+        background-color: var(--second-color);
+        /* margin-left: 10%; */
+        padding-top: 10px;
+        height: 65px;
+        font-size: 24px;
+    }
+    
+.second-section {
+    display: flex;
+    flex-direction: column;
+}
+.second-section div::after {
+    
+    bottom: 71%;
+}
+.threed-section {
+    flex-direction: column-reverse;
+}
+#img2 {
+    width: 100%;
+    transform: rotateZ(0deg);
+}
+#img1 {
+    width: 100%;
+}
+.center-squer {
+    width: 200px;
+    height: 200px;
+    top: 56%;
+    left: 15%;
+}
+.center-squer img {
+    width: 161px;
+}
+.idea img, .idea-2 img, .idea-3 img {
+    position: absolute;
+    right: -6px;
+    top: -202px;
+    
+    width: 125px;
+}
+.idea-3 img{
+    top: -86px;
+}
+.idea-2 img {
+    left: -16px;
+}
+.idea .text, .idea-2 .text {
+  display: none;
+}
+.idea-3 .text {
+    top: -97px;
+    left: 150px;
+    /* font-size: 12px; */
+    width: 116px;
+}
+.idea .lines, .idea-2 .lines, .idea-3 .lines {
+    width: 50px;
+    height: 100px;
+    top: -276px
+}
+
+.center-title {
+display: none;
+}
+.line {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10%;
+}
+.line img {
+    /* width: 400px; */
+    width: 100%;
+    height: 100%;
+}
+.seven-section, .nine-section {
+    flex-direction: column;
+}
+.eight-section, .ten-section {
+    flex-direction: column;
+}
+
+}
